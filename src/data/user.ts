@@ -10,6 +10,7 @@ export const USER = {
   address: "Noida Sector 62, Uttar Pradesh, India",
   email: "iemaildivyansh@gmail.com", // base64 encoded
   website: "https://divyansh.com",
+  ogImage: "https://divyansh-singh-portfolio.vercel.app/Profile.jpg", // ✅ Add this
   jobTitle: "Full Stack Developer | MERN Stack",
   jobs: [
     {
