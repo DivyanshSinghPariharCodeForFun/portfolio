@@ -11,6 +11,14 @@ export const USER = {
   email: "iemaildivyansh@gmail.com", // base64 encoded
   website: "https://divyansh.com",
   ogImage: "https://divyansh-singh-portfolio.vercel.app/Profile.jpg", // ✅ Add this
+  keywords: [
+    "Full Stack Developer",
+    "MERN Stack",
+    "React",
+    "Next.js",
+    "TypeScript",
+    "UI UX Designer",
+  ],
   jobTitle: "Full Stack Developer | MERN Stack",
   jobs: [
     {
