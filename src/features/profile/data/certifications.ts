@@ -20,6 +20,22 @@ export const CERTIFICATIONS: Certification[] = [
       "https://nextjs.org/learn/certificate?course=seo&user=47463&certId=seo-47463-1745634751873",
   },
   {
+    title: "Next.js App Router Fundamentals ",
+    issuer: "Vercel",
+    issuerIconName: "vercel",
+    issueDate: "2025-08-05",
+    credentialID: "LUDSA0121B095",
+    credentialURL: "https://nextjs.org/learn/certificate?course=dashboard-app&user=87542&certId=dashboard-app-87542-1754332329384",
+  },
+    {
+    title: "React Foundations for Next.js",
+    issuer: "Vercel",
+    issuerIconName: "vercel",
+    issueDate: "2025-08-05",
+    credentialID: "",
+    credentialURL: "https://nextjs.org/learn/certificate?course=react-foundations&user=87542&certId=react-foundations-87542-1754331947624",
+  },
+  {
     title: "Learn HTML",
     issuer: "One Month",
     issuerIconName: "vercel",
