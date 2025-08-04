@@ -31,8 +31,17 @@ export function ComponentPreview({
 }) {
   const [replay, setReplay] = useState(0);
 
-  const Codes = React.Children.toArray(children) as React.ReactElement[];
-  const Code = Codes[0];
+  // Convert children to array and assign unique keys to each
+  const Codes = React.Children.toArray(children).map((child, idx) => {
+    // If child already has a key, keep it, else assign one
+    if (React.isValidElement(child)) {
+      return React.cloneElement(child, { key: `code-${name}-${idx}` });
+    }
+    return child;
+  });
+
+  // Use the first code block for legacy behavior, but render all if needed
+  const Code = Codes.length > 0 ? Codes[0] : null;
 
   const Preview = useMemo(() => {
     const Component = Index[name]?.component;
@@ -96,10 +105,11 @@ export function ComponentPreview({
         <TabsContent value="code" className="[&>figure]:m-0">
           {codeCollapsible ? (
             <CodeCollapsibleWrapper className="my-0">
-              {Code}
+              {/* Render all code blocks if multiple exist */}
+              {Codes}
             </CodeCollapsibleWrapper>
           ) : (
-            Code
+            Codes
           )}
         </TabsContent>
       </Tabs>

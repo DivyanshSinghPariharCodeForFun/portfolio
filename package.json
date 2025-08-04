@@ -1,27 +1,15 @@
 {
-  "name": "chanhdai.com",
+  "name": "portfolio-local",
   "version": "0.1.0",
   "description": "A minimal portfolio, component registry, and blog.",
-  "homepage": "https://chanhdai.com",
   "license": "MIT",
   "author": {
-    "name": "Nguyen Chanh Dai",
-    "email": "dai@chanhdai.com",
-    "url": "https://github.com/ncdai"
+    "name": "Local User"
   },
-  "contributors": [
-    {
-      "name": "Nguyen Chanh Dai",
-      "email": "dai@chanhdai.com",
-      "url": "https://github.com/ncdai"
-    }
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ncdai/chanhdai.com.git"
-  },
+  "contributors": [],
+  "repository": {},
   "scripts": {
-    "dev": "next dev -p 1408 --turbopack",
+    "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
     "preview": "next build --turbopack && next start -p 1408",

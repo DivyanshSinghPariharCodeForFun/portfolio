@@ -35,8 +35,6 @@ import { cn } from "@/lib/utils";
 import type { Post } from "@/types/blog";
 import { copyText } from "@/utils/copy";
 
-import { ChanhDaiMark, getMarkSVG } from "./chanhdai-mark";
-import { getWordmarkSVG } from "./chanhdai-wordmark";
 import { Icons } from "./icons";
 import { Button } from "./ui/button";
 import { Separator } from "./ui/separator";
@@ -55,7 +53,7 @@ const MENU_LINKS: CommandLinkItem[] = [
   {
     title: "Daifolio",
     href: "/",
-    icon: ChanhDaiMark,
+    icon: Icons.react,
   },
   {
     title: "Blog",
@@ -275,19 +273,19 @@ export function CommandMenu({ posts }: { posts: Post[] }) {
             <CommandItem
               onSelect={() => {
                 handleCopyText(
-                  getMarkSVG(resolvedTheme === "light" ? "#000" : "#fff"),
+                  'url(\'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path fill="%23000" d="M50 91.35l-7.35-6.73C22.65 66.87 0 51.28 0 35.5 0 15.85 15.85 0 35.5 0c10.74 0 20.48 4.5 27.3 11.7C68.02 4.5 77.76 0 88.5 0 108.15 0 124 15.85 124 35.5c0 15.78-22.65 31.37-42.65 49.12L50 91.35z"/></svg>\')',
                   "Copied Mark as SVG"
                 );
               }}
             >
-              <ChanhDaiMark />
+              <Icons.react />
               Copy Mark as SVG
             </CommandItem>
 
             <CommandItem
               onSelect={() => {
                 handleCopyText(
-                  getWordmarkSVG(resolvedTheme === "light" ? "#000" : "#fff"),
+                  'url(\'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path fill="%23000" d="M50 91.35l-7.35-6.73C22.65 66.87 0 51.28 0 35.5 0 15.85 15.85 0 35.5 0c10.74 0 20.48 4.5 27.3 11.7C68.02 4.5 77.76 0 88.5 0 108.15 0 124 15.85 124 35.5c0 15.78-22.65 31.37-42.65 49.12L50 91.35z"/></svg>\')',
                   "Copied Logotype as SVG"
                 );
               }}
@@ -441,8 +439,6 @@ function CommandMenuFooter() {
       <div className="flex h-10" />
 
       <div className="absolute inset-x-0 bottom-0 flex h-10 items-center justify-between gap-2 border-t bg-zinc-100/30 px-4 text-xs font-medium dark:bg-zinc-800/30">
-        <ChanhDaiMark className="size-6 text-muted-foreground" aria-hidden />
-
         <div className="flex shrink-0 items-center gap-2">
           <span>{ENTER_ACTION_LABELS[selectedCommandKind]}</span>
           <CommandMenuKbd>

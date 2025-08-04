@@ -11,7 +11,7 @@ import { Experiences } from "@/features/profile/components/experiences";
 import { Overview } from "@/features/profile/components/overview";
 import { ProfileCover } from "@/features/profile/components/profile-cover";
 import { ProfileHeader } from "@/features/profile/components/profile-header";
-import { Projects } from "@/features/profile/components/projects";
+// import { Projects } from "@/features/profile/components/projects";
 import { SocialLinks } from "@/features/profile/components/social-links";
 import { TeckStack } from "@/features/profile/components/teck-stack";
 import { cn } from "@/lib/utils";
@@ -43,13 +43,13 @@ export default function Page() {
         <TeckStack />
         <Separator />
 
-        <Blog />
+        {/* <Blog /> */}
         <Separator />
 
         <Experiences />
         <Separator />
 
-        <Projects />
+        {/* <Projects /> */}
         <Separator />
 
         <Awards />

@@ -1,61 +1,40 @@
 export const USER = {
-  firstName: "Chánh Đại",
-  lastName: "Nguyễn",
-  displayName: "Chánh Đại",
-  username: "ncdai",
+  firstName: "Divyansh Singh",
+  lastName: "Parihar",
+  displayName: "Divyansh Singh Parihar",
+  username: "divyansh-singh-parihar",
   gender: "male",
   pronouns: "he/him",
-  bio: "Creating with code. Small details matter.",
-  flipSentences: [
-    "Creating with code. Small details matter.",
-    "Design Engineer",
-    "Open Source Contributor",
-  ],
-  address: "Thanh My Tay Ward, Ho Chi Minh City, Viet Nam",
-  phoneNumber: "Kzg0Nzc3ODg4MTQ4", // E.164 format, base64 encoded (https://t.io.vn/base64-string-converter)
-  email: "ZGFpQGNoYW5oZGFpLmNvbQ==", // base64 encoded
-  website: "https://chanhdai.com",
-  otherWebsites: [
-    "https://dai.ng",
-    "https://dai.so",
-    "https://d.io.vn",
-    "https://d.id.vn",
-    "https://dai.io.vn",
-    "https://dai.id.vn",
-    "https://chanhdai.io.vn",
-    "https://chanhdai.id.vn",
-    "https://ncdai.vn",
-    "https://ncdai.net",
-    "https://dai.is-a.dev",
-  ],
-  jobTitle: "Design Engineer",
+  bio: "Full Stack Developer | MERN Stack.",
+  flipSentences: ["MERN Stack.", "Full Stack Developer", "UI UX Designer"],
+  address: "Noida Sector 62, Uttar Pradesh, India",
+  email: "iemaildivyansh@gmail.com", // base64 encoded
+  website: "https://divyansh.com",
+  jobTitle: "Full Stack Developer | MERN Stack",
   jobs: [
     {
-      title: "Senior Frontend Developer & UI Design Lead",
-      company: "Simplamo",
-      website: "https://simplamo.com?ref=IN-926722",
+      title: "Full Stack Developer | MERN Stack",
     },
     {
-      title: "Founder",
-      company: "Quaric",
-      website: "https://quaric.com",
+      title: "Ex-Intern | Full Stack Developer",
+      company: "Religare Housing Development Finance Corporation",
+      website: "https://www.religare.com",
     },
   ],
   about: `
-Hello, World! I am Chánh Đại — a Design Engineer passionate about creating high-performance, user-centric software solutions with intuitive and engaging designs.
+Hey, I’m Divyansh Singh Parihar — a Full Stack Developer and UI/UX Designer who loves building things that actually help people.
 
-With 5+ years of experience, I specialize in building high-quality web and mobile applications using Next.js, React, TypeScript, and modern front-end technologies. Beyond work, I love exploring new technologies and turning ideas into reality through personal projects.
+I recently interned at Religare Housing Finance, where I built an internal entitlement review system that cut down manual review efforts by over 60%. I also integrated secure authentication (LDAP), automated emails, and handled production deployment — it gave me a solid taste of building real-world systems at scale.
 
-One of my key projects, [ZaDark](https://zadark.com), enhances the Zalo experience on PC and Web, surpassing 80,000 downloads on [SourceForge](https://sourceforge.net/projects/zadark) and 15,000 active users on the [Chrome Web Store](https://chromewebstore.google.com/detail/llfhpkkeljlgnjgkholeppfnepmjppob) since 2022.
+Beyond that, I’ve worked on projects like ThesisOne, an AI-powered slide generator used by 100+ users, and an AI code documentation tool that turns GitHub repos into clean, exportable docs — cutting doc work by up to 80%.
 
-I'm also the creator of [React Wheel Picker](https://react-wheel-picker.chanhdai.com) — iOS-like wheel picker for React with smooth inertia scrolling and infinite loop support. It has earned 221 stars on [GitHub](https://github.com/ncdai/react-wheel-picker) and was selected for **Vercel's Open Source Program** summer 2025 cohort, receiving $3,600 in Vercel platform credits, an OSS Starter Pack, and priority community support to fuel its ongoing development.
+I’m also the creator of StudyPal, a peer-matching platform for students that made it to the finals of RIDE Hackathon 2023, and an Obfuscated Malware Detector that uses explainable ML to catch threats from raw memory dumps.
 
-Let's connect and collaborate!
-  `,
-  avatar: "https://assets.chanhdai.com/images/chanhdai-avatar-ghibli.jpeg",
-  ogImage: "https://assets.chanhdai.com/images/screenshot-og-image-dark.png",
-  namePronunciationUrl: "https://assets.chanhdai.com/audio/chanhdai.mp3",
-  keywords:
-    "ncdai, nguyenchanhdai, nguyen chanh dai, chanhdai, chanh dai, iamncdai, quaric, zadark, nguyễn chánh đại, chánh đại",
+
+I care about building tools that are fast, meaningful, and easy to use. Outside of work, I love exploring new tech and turning side projects into something real.
+
+Let’s connect — I’m always up for solving interesting problems or just chatting about cool ideas.
+`,
+  avatar: "https://divyansh-singh-portfolio.vercel.app/Profile.jpg",
   dateCreated: "2023-10-20", // YYYY-MM-DD
 };

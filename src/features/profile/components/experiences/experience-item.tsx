@@ -39,8 +39,11 @@ export function ExperienceItem({ experience }: { experience: Experience }) {
       </div>
 
       <div className="relative space-y-4 before:absolute before:left-3 before:h-full before:w-px before:bg-border">
-        {experience.positions.map((position) => (
-          <ExperiencePositionItem key={position.id} position={position} />
+        {experience.positions.map((position, idx) => (
+          <ExperiencePositionItem
+            key={position.id || `${experience.id}-pos-${idx}`}
+            position={position}
+          />
         ))}
       </div>
     </div>
