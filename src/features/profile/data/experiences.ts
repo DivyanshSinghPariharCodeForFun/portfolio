@@ -50,8 +50,7 @@ export const EXPERIENCES: Experience[] = [
         },
         employmentType: "Part-time",
         icon: "code",
-        description: `In-house Project: [Quaric Website](https://quaric.com)
-- Designed and developed 10+ WordPress websites across various industries including travel, hospitality, education, and matrimony.
+        description: `- Designed and developed 10+ WordPress websites across various industries including travel, hospitality, education, and matrimony.
 - Built custom solutions for niche platforms, including matrimonial sites (like shaadi.com) and local businesses such as Jungle Park tour booking portals.
 - Delivered mobile-responsive, SEO-optimized websites with integrated payment gateways and lead capture systems.`,
         skills: ["WordPress", "Elementor", "No Code"],
