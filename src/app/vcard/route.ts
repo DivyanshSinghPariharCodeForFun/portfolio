@@ -23,7 +23,12 @@ export async function GET() {
 
   if (USER.jobs.length > 0) {
     const company = USER.jobs[0];
-    card.addCompany(company.company).addJobtitle(company.title);
+    if (company.company) {
+      card.addCompany(company.company);
+    }
+    if (company.title) {
+      card.addJobtitle(company.title);
+    }
   }
 
   return new NextResponse(card.toString(), {
