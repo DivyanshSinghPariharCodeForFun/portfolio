@@ -22,16 +22,13 @@ export function BrandContextMenu({ children }: { children: React.ReactNode }) {
 
       <ContextMenuContent className="w-64">
         <ContextMenuItem asChild>
-          <Link href="/blog/chanhdai-brand">
-            <TriangleDashedIcon />
-            Brand Guidelines
-          </Link>
-        </ContextMenuItem>
-
-        <ContextMenuItem asChild>
-          <a href="https://assets.chanhdai.com/chanhdai-brand.zip" download>
+          <a
+            href="https://drive.google.com/file/d/13lbW-DFA-IZDFmMX9GdQ85m6HXATTt0y/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <DownloadIcon />
-            Download Brand Assets
+            Download Resume
           </a>
         </ContextMenuItem>
       </ContextMenuContent>

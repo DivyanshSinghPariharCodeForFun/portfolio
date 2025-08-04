@@ -11,7 +11,14 @@ export function ProfileCover() {
           "screen-line-before screen-line-after before:-top-px after:-bottom-px",
           "bg-black/0.75 bg-[radial-gradient(var(--pattern-foreground)_1px,transparent_0)] bg-size-[10px_10px] bg-center [--pattern-foreground:var(--color-zinc-950)]/5 dark:bg-white/0.75 dark:[--pattern-foreground:var(--color-white)]/5"
         )}
-      ></div>
+      >
+        <h1
+          className="text-center text-5xl font-bold"
+          style={{ fontFamily: '"Libertinus Serif", serif' }}
+        >
+          Divyansh Singh <br /> Parihar{" "}
+        </h1>
+      </div>
     </BrandContextMenu>
   );
 }
