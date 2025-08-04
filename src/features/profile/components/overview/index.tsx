@@ -4,10 +4,8 @@ import { USER } from "@/data/user";
 import { urlToName } from "@/utils/url";
 
 import { Panel, PanelContent } from "../panel";
-import { EmailItem } from "./email-item";
 import { IntroItem } from "./intro-item";
 import { JobItem } from "./job-item";
-import { PhoneItem } from "./phone-item";
 
 export function Overview() {
   return (
@@ -15,33 +13,31 @@ export function Overview() {
       <h2 className="sr-only">Overview</h2>
 
       <PanelContent className="space-y-2">
-        {USER.jobs.map((job, index) => {
-          return (
-            <JobItem
-              key={index}
-              title={job.title}
-              company={job.company}
-              website={job.website}
-            />
-          );
-        })}
+        {USER.jobs.map((job, index) => (
+          <JobItem
+            key={index}
+            title={job.title ?? ""}
+            company={job.company ?? ""}
+            website={job.website ?? ""}
+          />
+        ))}
 
-        <IntroItem icon={MapPinIcon} content={USER.address} />
+        {USER.address && <IntroItem icon={MapPinIcon} content={USER.address} />}
 
-        {/* <PhoneItem phoneNumber={USER.phoneNumber} /> */}
+        {USER.website && (
+          <IntroItem
+            icon={GlobeIcon}
+            content={urlToName(USER.website)}
+            href={USER.website}
+          />
+        )}
 
-        {/* <EmailItem email={USER.email} /> */}
-
-        <IntroItem
-          icon={GlobeIcon}
-          content={urlToName(USER.website)}
-          href={USER.website}
-        />
-
-        <IntroItem
-          icon={USER.gender === "male" ? MarsIcon : VenusIcon}
-          content={USER.pronouns}
-        />
+        {USER.gender && USER.pronouns && (
+          <IntroItem
+            icon={USER.gender === "male" ? MarsIcon : VenusIcon}
+            content={USER.pronouns}
+          />
+        )}
       </PanelContent>
     </Panel>
   );
